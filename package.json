@@ -7,7 +7,7 @@
     "build": "tsc",
     "build-db": "node src/db/migrate.js",
     "start": "node dist/index.js",
-    "start-dev": "nodemon src/index.ts"
+    "start-dev": "nodemon --inspect src/index.ts"
   },
   "author": "",
   "license": "ISC",
