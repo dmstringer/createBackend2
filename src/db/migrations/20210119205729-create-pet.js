@@ -25,9 +25,17 @@ module.exports = {
       },
       storeId: {
         type: Sequelize.INTEGER,
+        references: {
+          model: 'store',
+          key: 'id',
+        },
       },
       ownerId: {
         type: Sequelize.INTEGER,
+        references: {
+          model: 'owner',
+          key: 'id',
+        },
       },
       hasShots: {
         type: Sequelize.BOOLEAN,
